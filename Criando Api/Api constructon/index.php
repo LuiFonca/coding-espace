@@ -6,12 +6,12 @@ require_once "database/connect.php";
 require_once "Facade.php";
 
 
-//Get request json
+
 $clientRequest = json_decode(file_get_contents("php://input"), true);
-//print_r(json_encode($clientResponse));
-//Create $bundle
+
+
 $bundle = $clientRequest;
-// Instance of Facade
+
 new Facade($bundle);
 
 

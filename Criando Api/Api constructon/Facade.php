@@ -38,8 +38,8 @@ class Facade {
             return;
         }
 
-        // ✅ Aqui o Controller só recebe o bundle
-        // Ele mesmo vai instanciar a DAO passando o $conn
+        
+      
         new $controllerName($this->bundle);
     }
 }
