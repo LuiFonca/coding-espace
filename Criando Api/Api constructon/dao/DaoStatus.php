@@ -58,7 +58,7 @@ class DaoStatus {
 
     /**
      * Insere um novo status (histórico). Usa NOW() no banco.
-     * Proteção leve contra duplo clique: ignora INSERT idêntico nos últimos 5s.
+     * Proteção leve contra duplo clique
      */
     public function setStatus($phone, $status, $comentario) {
         $phone = $this->normalizePhone($phone);
