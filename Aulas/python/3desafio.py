@@ -39,4 +39,22 @@ if valor_final >= pagamento_minimo:
 else:
     print("Recusada")
 
-# Desafio 3: 
+# Desafio 3:
+#    Implemente um programa que receba uma string representando o nome de um cliente, 
+#    possivelmente com letras em qualquer caixa e espaços extras no início ou no fim. 
+#    O programa deve retornar o nome formatado corretamente, 
+#    com apenas um espaço entre as palavras e cada palavra iniciando com letra maiúscula.
+ 
+entrada = input()
+
+
+pacote = entrada.strip().split()
+
+palavras_formatadas = [pacote.capitalize() for pacote in pacote]
+
+nome_formatado = ' '.join(palavras_formatadas)
+
+print(nome_formatado) 
+
+
+
