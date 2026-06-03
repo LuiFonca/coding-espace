@@ -75,7 +75,7 @@ def contar_caracteres(string):
     
   return contador
 
-# Solicita entrada do usuário
+
 entrada = input()
 resultado = contar_caracteres(entrada)
 print(resultado)    

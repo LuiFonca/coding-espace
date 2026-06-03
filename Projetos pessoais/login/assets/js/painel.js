@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     sidebarToggle.addEventListener('click', function() {
         sidebar.classList.toggle('-translate-x-full');
         mainContent.classList.toggle('ml-0');
-        mainContent.classList.toggle('md:ml-64'); // Ajuste para responsividade
+        mainContent.classList.toggle('md:ml-64'); 
     });
 
     // ===== DROPDOWN PROFILE ===== 

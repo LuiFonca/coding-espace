@@ -1,13 +1,27 @@
 import os
+#========== Dica(xandinho)# ==========
+# class Carro:
+#   def __init__(self, marca: str = 'fiat', modelo: str, ano: int) -> None:
+#        self.marca : str = marca
+#        self.modelo :  = Modelo()
+#        self.ano : int = ano
+#
+#
+# modelo(marca='volk', modelo='gol', ano=2020)
+#
+# modelo = Modelo(modelo='gol', ano=2020)
+
+
 
 # ========= DIVERSOS =========
 def limpar_tela():
     os.system("cls" if os.name == "nt" else "clear")
 
 
-def float_positivo(msg):
+def float_positivo(msg: str) -> float:
     while True:
         try:
+            print(type(msg))
             valor = float(input(msg))
             if valor > 0:
                 return valor
