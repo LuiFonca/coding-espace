@@ -47,9 +47,7 @@ def analisar_dataframe(nome, df):
     print(df.dtypes)
 
 
-# ==========================
 # EXTRACT
-# ==========================
 
 tabelas = carregar_dados()
 
